@@ -1,0 +1,8 @@
+
+
+.pet-image {
+    width: 100%; /* Full width inside the slider */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensure images are cropped properly */
+    border-radius: 10px;
+}

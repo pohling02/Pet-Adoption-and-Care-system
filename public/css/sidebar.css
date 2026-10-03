@@ -1,0 +1,84 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f5ede1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.profile-initials {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #b38b7c;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+.btn-block {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #b38b7c;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+.btn-block:hover, .btn-active {
+    background-color: #b38b7c;
+    color: white;
+}
+
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.section-title {
+    background-color: #d6ccc2;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+.table thead th {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-weight: bold;
+}
+.table tbody td {
+    text-align: center;
+}
+.text-primary {
+    color: #007bff !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+.text-warning {
+    color: #ff9800 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+.text-secondary {
+    color: #6c757d !important;
+    font-weight: bold;
+}
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

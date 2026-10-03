@@ -1,0 +1,30 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# 安装 OpenCV 需要的 Linux 底层图形库
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
+
+RUN pip install --no-cache-dir pillow requests numpy packaging PyYAML tqdm psutil urllib3 certifi charset-normalizer idna
+RUN pip install --no-cache-dir scipy matplotlib polars polars-runtime-32 scikit-learn joblib contourpy cycler fonttools kiwisolver pyparsing python-dateutil six sympy mpmath networkx
+
+RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+RUN pip install --no-cache-dir opencv-python ultralytics ultralytics-thop
+
+RUN pip install --no-cache-dir fastapi==0.111.0 uvicorn==0.30.1 python-multipart==0.0.9
+
+# ---------------------------------------------------------------------
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["uvicorn", "scripts.main:app", "--host", "0.0.0.0", "--port", "8000"]

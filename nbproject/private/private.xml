@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/app/Http/Controllers/Adopter/AdopterDashboardController.php</file>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/database/migrations/2025_01_03_184600_create_pets_table.php</file>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/app/Services/OpenAIService.php</file>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/resources/views/Adopter/dashboard.blade.php</file>
+            <file>file:/C:/xampp/htdocs/petadoptionsystemFYP/database/migrations/2025_02_13_063314_create_adopter_profiles_table.php</file>
+        </group>
+    </open-files>
+</project-private>
